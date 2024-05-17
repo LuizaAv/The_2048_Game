@@ -15,6 +15,12 @@ class Game{
                     ]
     }
 
+    printMatrix(){
+        this.matrix.forEach(row => {
+            console.log(row.join(' '));
+        });
+    }
+
     reset(){
         this.matrix.map((item, row) => {
             item.map((item, coloumn) => {
@@ -122,7 +128,7 @@ class Matrix extends Game{
         this.updateElementsStatus()
         this.generateRandomValue()
 
-        return this.matrix
+        return this.printMatrix()
     }
 
     moveBottom() {
@@ -149,7 +155,7 @@ class Matrix extends Game{
         this.updateElementsStatus()
         this.generateRandomValue()
 
-        return this.matrix
+        return this.printMatrix()
     }
 
     moveRight() {
@@ -177,7 +183,7 @@ class Matrix extends Game{
         this.updateElementsStatus()
         this.generateRandomValue()
 
-        return this.matrix
+        return this.printMatrix()
     }
 
     moveLeft() {
@@ -208,7 +214,7 @@ class Matrix extends Game{
         this.updateElementsStatus()
         this.generateRandomValue()
 
-        return this.matrix
+        return this.printMatrix()
     }
 
     userInput(){
