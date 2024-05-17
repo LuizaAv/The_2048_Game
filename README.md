@@ -5,7 +5,7 @@ Game's objective is to combine tiles with the same number. The greatest number t
 
 Usage:
 
-To play the game you use terminal, after running the program you can input one of these directions: "top", "bottom", "left" or "right"
+To play the game you use terminal, after running the program you can input one of these directions: "t" - for top, "b" for bottom, "l" for left or "r" for right.
 
 
 Combining Tiles: 
