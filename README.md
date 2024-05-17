@@ -5,6 +5,11 @@ Game's objective is to combine tiles with the same number. The greatest number t
 
 Usage:
 
+To start the game you need to run
+  npm init 
+  npm i
+  node index.js
+  
 To play the game you use terminal, after running the program you can input one of these directions: "t" - for top, "b" for bottom, "l" for left or "r" for right.
 
 
