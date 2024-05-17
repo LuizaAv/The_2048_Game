@@ -82,13 +82,13 @@ class Matrix extends Game{
     }
 
     move(direction){
-        if(direction === "top"){
+        if(direction === "t"){
             return this.moveTop()
-        }else if(direction === "bottom"){
+        }else if(direction === "b"){
             return this.moveBottom()
-        }else if(direction === "left"){
+        }else if(direction === "l"){
             return this.moveLeft()
-        }else if(direction === "right"){
+        }else if(direction === "r"){
             return this.moveRight()
         }else{
             console.log("Enter a valid direction")
@@ -192,7 +192,6 @@ class Matrix extends Game{
                             this.matrix[row][currentCol] = 0
                         }else if(this.matrix[row][currentCol - 1] === this.matrix[row][currentCol] && !mergedElems.includes(currentCol - 1)){
                             this.matrix[row][currentCol - 1] += this.matrix[row][currentCol - 1]
-                            
                             this.increaseTheScore(this.matrix[row][currentCol - 1])
 
                             this.matrix[row][currentCol] = 0
@@ -216,7 +215,7 @@ class Matrix extends Game{
         this.updateElementsStatus()
 
         while (Object.keys(this.elementsStatus).length !== 0) {
-            let result = prompt("Enter the direction please (it can be top, bottom, left, right): ")
+            let result = prompt("Enter the direction please (it can be <t> for top, <b> for bottom, <l> for left, <r> for right): ")
             this.move(result)
             console.log(this.matrix)
             console.log(this.increaseTheScore())
